@@ -58,7 +58,7 @@ for (var filename of process.argv.slice(2))
         var result = compiler.compile({sources: inputs})
         if (!('contracts' in result))
         {
-            console.log(filenname + ': ERROR')
+            console.log(filename + ': ERROR')
         }
         else
         {
